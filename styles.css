@@ -1,0 +1,41 @@
+/* EN ESTE DOCUMENTO ESCRIBIMOS TODOS LOS ESTILOS EN COMÚN QUE USAN TODAS LAS PÁGINAS COMO POR EJEMPLO EL HEADER Y EL FOOTER */
+
+/* el simbolo * sirve para aplicar estilos a TODO el documento */
+* {
+	font-family: Montserrat;
+	font-weight: 500;
+}
+
+p, li, a {
+	font-size: 20px
+}
+
+.header {
+	background-image: url('header.jpg');
+	background-size: cover; 
+	background-position: center center; 
+	padding: 20px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer {
+	background-color: gray; 
+	padding: 20px;
+	margin-top: 100px;
+	color: white;
+	text-align: center
+}
+
+.footer>p {
+	font-size: 20px
+}
+
+.flotando {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 999;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- comentarios -->
+	<!-- Descarga la fuente personalizada Montserrat -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="styles.css"> 
+
+	<style>
+		/* el simbolo * sirve para aplicar estilos a TODO el documento */
+		td {
+			padding: 10px
+		}
+
+		div.formDiv {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 40px;
+		}
+	</style>
+
+	<title>Tacos Stack</title>
+</head>
+
+<!-- le damos margenes de 0 al body porque por defecto tiene margen y en mi web no quiero -->
+<body style="margin: 0;">
+
+	<div class="header"><div style="color: white"><h1 style="font-weight: 800">TACOS STACK</h1></div>
+</div>
+
+	<div class="container pt-3">
+
+		<!-- creamos el titulo principal y le damos el siguiente estilo para centrarlo -->
+		<h1 class="text-center">Tacos Stack, los mejores de todo internet</h1>
+		<h2 class="mt-5">Tu pedido seleccionado</h2>
+
+		<div class="row p-3">
+			<a href="index.html">< Editar pedido </a>
+		</div>
+
+		<!-- estilo para centrar los elementos dentro del div -->
+		<div class="row px-3">
+			<!-- hacemos que la tabla ocupe el 100% del ancho y con margin: 0 auto; la centramos en el medio -->
+			<table class="table mx-auto" id="tablaResumen">
+				<tr style="background-color: rgb(153,153,153);">
+					<!-- a la primera columna le damos el ancho del 50% del total -->
+					<td><b>Producto</b></td>
+					<td><b>Precio</b></td>
+					<td><b>Cantidad</b></td>
+				</tr>
+				<tbody id="tbodyTablaResumen">		
+				</tbody>
+				<tr style="width: 50%; background-color: rgb(153,153,153);">
+					<!-- a la primera columna le damos el ancho del 50% del total -->
+					<td style="width: 70%"><span style="font-size: 20px"><b >Precio total</b></span></td>
+					<td><span style="font-size: 20px"><b id="precioTotalResumen">16,70 €</b></span></td>
+					<td></td>
+				</tr>
+			</table>
+
+			<br><br>
+
+			<div class="formDiv mx-auto mt-5">
+				<h2>Tus datos de envío</h2>
+				<br><br>
+				<form>
+					Nombre:<br>
+					<input class="form-control" type="text" name="nombre">
+					<br>
+					Dirección:<br>
+					<input class="form-control" type="text" name="direccion">
+					<br>
+					Teléfono:<br>
+					<input class="form-control" type="number" name="telefono">
+					<br>
+					Comentarios: <br>
+					<textarea class="form-control" cols="40" rows="5" name="comentarios">
+					</textarea>
+					<br>
+					<input class="btn btn-primary w-100" type="submit" value="Enviar">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- creamos el footer y le damos un color gris de fondo un margen superio de 100px y un padding (margenes interiores de 20px) -->
+	<div class="footer">
+		<p>Carretera Batu Mejan 20A, Stack Town. +62 678 991 888 1111</p>
+	</div>
+
+
+
+	<script type="text/javascript" src="app2.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
